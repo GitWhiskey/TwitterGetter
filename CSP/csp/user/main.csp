@@ -1,0 +1,8 @@
+<html>
+	<head>
+		<title>Twitter getter</title>
+	</head>
+	<body>
+		<a href="gettweets.csp?user=Max">Get tweets</a>
+	</body>
+</html>

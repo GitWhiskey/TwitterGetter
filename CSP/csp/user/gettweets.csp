@@ -1,0 +1,4 @@
+<server>
+	set name = %request.Get("user")
+	DO ##class(TG.TweetService).GetTweets(name)
+</server>
