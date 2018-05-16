@@ -1,8 +1,27 @@
 <html>
 	<head>
 		<title>Twitter getter</title>
+		<script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+		<script type="text/javascript" src="DataTables/datatables.min.js"></script>
 	</head>
 	<body>
-		<a href="gettweets.csp?user=Max">Get tweets</a>
+		<label>Channel:</label>&nbsp;<input id="channelName">
+		<label>How many tweets to get:</label>&nbsp;<input id="tweetNumber">
+		<button id="get-tweets-button">Get Tweets</button> 
+		<br />
+		<br />
+		<br />
+		<div id="tweets-container"></div>
+		<table id="tweets-table" class="display" style="width:100%">
+			<thead>
+			<tr>
+				<th>Tweet id</th>
+				<th>Tweet text</th>
+				<th>Tweet date</th>
+			</tr>
+			</thead>
+		</table>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

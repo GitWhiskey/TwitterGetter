@@ -1,8 +1,8 @@
 /// Класс твита, который будет храниться в базе
 Class TG.Tweet Extends %Persistent
 {
-	Property tweetText as %String;
-	Property tweetDate as %String;
+	Property tweetText as %String(MAXLEN = 100000);
+	Property tweetDate as %String(MAXLEN = 100000);
 
 Storage Default
 {

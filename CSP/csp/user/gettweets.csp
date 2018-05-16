@@ -1,4 +1,5 @@
 <server>
-	set name = %request.Get("user")
-	DO ##class(TG.TweetService).GetTweets(name)
+	Set channel = %request.Get("channelName")
+	Set number = %request.Get("tweetNumber")
+	Do ##class(TG.TweetService).GetTweets(channel, number)
 </server>
